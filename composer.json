@@ -1,5 +1,5 @@
 {
-    "name": "ddeboer/imap",
+    "name": "johannesb/imap",
     "description": "Object-oriented IMAP for PHP",
     "keywords": [ "email", "mail", "imap" ],
     "license": "MIT",
@@ -24,8 +24,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Ddeboer\\Imap\\": "src/",
-            "Ddeboer\\Imap\\Tests\\": "tests/"
+            "johannesb\\Imap\\": "src/",
+            "johannesb\\Imap\\Tests\\": "tests/"
         }
     }
 }
