@@ -3,7 +3,6 @@
 namespace Ddeboer\Imap\Message;
 
 use Ddeboer\Imap\Parameters;
-use Ddeboer\Transcoder\Transcoder;
 
 /**
  * A message part
@@ -182,10 +181,7 @@ class Part implements \RecursiveIterator
             if ($this->getType() === self::TYPE_TEXT
                 && strtolower($this->getCharset()) != 'utf-8'
             ) {
-                $this->decodedContent = Transcoder::create()->transcode(
-                    $this->decodedContent,
-                    $this->getCharset()
-                );
+                $this->decodedContent = imap_utf8($this->decodedContent);
             }
         }
 
