@@ -1,31 +1,14 @@
 {
-    "name": "johannesb/imap",
-    "description": "Object-oriented IMAP for PHP",
-    "keywords": [ "email", "mail", "imap" ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "David de Boer",
-            "email": "david@ddeboer.nl"
-        },
-        {
-            "name": "Community contributors",
-            "homepage": "https://github.com/ddeboer/imap/graphs/contributors"
-        }   
-    ],
-    "require": {
-        "php": ">=5.4.0",
-        "ext-imap": "*"
-    },
-    "require-dev": {
-        "ext-mbstring": "*",
-        "ext-iconv": "*",
-        "phpunit/phpunit": "~4.0"
+    "name":     "johannesb/imap",
+    "version":  "dev-master",
+    "source":   {
+        "url":       "git://github.com/Johannesb/imap.git",
+        "type":      "git",
+        "reference": "master"
     },
     "autoload": {
-        "psr-4": {
-            "johannesb\\Imap\\": "src/",
-            "johannesb\\Imap\\Tests\\": "tests/"
+        "psr-0": {
+            "johannesb\\imap": "src"
         }
     }
 }
